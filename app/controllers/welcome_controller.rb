@@ -5,5 +5,8 @@ class WelcomeController < ApplicationController
       @request.save
 
       @requests = Request.last(10)
+
+      log = Logger.new(STDERR)
+      log.error("An error message was logged that's not actually an error")
     end
 end
