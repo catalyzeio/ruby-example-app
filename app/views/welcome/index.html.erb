@@ -1,2 +1,17 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<table>
+  <thead>
+    <th>Request number</th>
+    <th>Time</th>
+  </thead>
+  <tbody>
+    <% @requests.reverse_each do |request| %>
+      <tr>
+        <td><%= request.id %></td>
+        <td><%= request.time %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
