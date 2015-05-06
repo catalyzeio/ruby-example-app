@@ -80,3 +80,4 @@ test:
 #
 production:
   url: <%= ENV['DATABASE_URL'] %>
+  database: ruby-example-app_production
